@@ -32,17 +32,14 @@ def print_promotion(total_cost):
     else:
         # no gift
         print(NO_GIFT)
-        return NO_GIFT
 
     if total_cost >= MAXIMUM:
         print(FREE_ICECREAM + str(num_icecream) + " and " + FREE_CAKE + str(num_cake))
-        return FREE_ICECREAM + str(num_icecream) + " and " + FREE_CAKE + str(num_cake)
     elif total_cost >= MIDRANGE:
         print(FREE_CAKE + str(num_cake))
-        return FREE_CAKE + str(num_cake)
     else:
         print(FREE_ICECREAM + str(num_icecream))
-        return FREE_ICECREAM + str(num_icecream)
+        
 
 
 print_promotion(150)
